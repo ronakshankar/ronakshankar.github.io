@@ -30,9 +30,14 @@ Question 1 and Question 2 will be the Independent variables and is_duplicate be 
 8.	Create the attention masks to distinguish real tokens from [PAD] tokens.
 9.	Create token type ids to indicate which token belongs to which question.
 
+![alt text](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/preprocessing.png)
+
+
 # **BERT Model**
 
 Bidirectional Encoder Representations from Transformers (BERT) was released and pre-trained by Google for natural language processing tasks in late 2018. It consists of 12 transformer encoding layers (or 24 for large BERT). BERT relies on a Transformer - its attention mechanism learns contextual relationships between words in a text. Since BERT’s goal is to generate a language representation model, it only needs the encoder part. BERT is a pre-trained model using plain text corpus. We fine-tuned bert-base-uncased model by adding just an additional output layer to classify duplicate questions.
+
+![BERT](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/BERT.png)
 
 # **Training**
 
@@ -49,6 +54,9 @@ Few variables that have been tuned:
 - Epochs – 2, 5, 10, 50
 
 ## **Results :**
+
+![RESULT](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Results.png)
+
 The optimal parameter for our model was : 
 
 - Gelu Activation, 
@@ -57,6 +65,8 @@ The optimal parameter for our model was :
 - 2e-5 learning rate
 - Dropout rate 0.2
 - 12 Attention head
+
+
 ## **Demo :**
 A user gives two questions to the model and the model cleans the questions, pre process over the data. The preprocessed data will be given to the model which predicts whether the questions are duplicate or not. 
 The following is a screenshot for the Demo
