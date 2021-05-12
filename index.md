@@ -57,6 +57,7 @@ Few variables that have been tuned:
 
 ![RESULT](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Results.png)
 
+
 The optimal parameter for our model was : 
 
 - Gelu Activation, 
@@ -66,6 +67,7 @@ The optimal parameter for our model was :
 - Dropout rate 0.2
 - 12 Attention head
 
+![RESULT](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Training.png?raw=true)
 
 ## **Demo :**
 A user gives two questions to the model and the model cleans the questions, pre process over the data. The preprocessed data will be given to the model which predicts whether the questions are duplicate or not. 
