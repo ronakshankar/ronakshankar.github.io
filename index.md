@@ -61,3 +61,4 @@ The optimal parameter for our model was :
 A user gives two questions to the model and the model cleans the questions, pre process over the data. The preprocessed data will be given to the model which predicts whether the questions are duplicate or not. 
 The following is a screenshot for the Demo
 
+![alt text](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Demo%20output.png)
