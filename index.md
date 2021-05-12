@@ -7,14 +7,7 @@ Community Question Answering (CQA) has become a primary means for people to acqu
 
 The Quora Question Pair dataset contains more than 400 thousand unique question pairs. The Quora question pair dataset contains the following columns. 
 
-
-Variable Name | Description |
---- | --- | 
-qid1 | Question 1 ID |
-qid2 | Question 2 ID |
-question1 | Full text of Question 1 |
-question2 | Full text of Question 2 |
-is_duplicate | If Question 1 and Question 2 are similar |
+![alt text](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Dataset.png?raw=true)
 
 
 Question 1 and Question 2 will be the Independent variables and is_duplicate be the prediction value. The total dataset is split into Training and Testing data with 80%-20% split. Further in training data, the data is again split by the same percentage for training data and validation data. The Testing data will be the final dataset to evaluate after hyperparameter tuning to minimize data snooping. 
