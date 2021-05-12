@@ -1,5 +1,3 @@
-# **Question Matching using BERT**
-
 ## **Introduction**
 
 Community Question Answering (CQA) has become a primary means for people to acquire knowledge, where people are free to ask questions or submit answers. To enhance the efficiency of the service, similar question identification becomes a core task in CQA which aims to find a similar question from the archived repository whenever a new question is asked. However, it has long been a challenge to properly measure the similarity between two questions due to the inherent variation of natural language, i.e., there could be different ways to ask the same question or different questions sharing similar expressions. For our project, we would like to find an efficient way of question matching using concepts from Information Retrieval and Machine Learning. 
@@ -8,6 +6,8 @@ Community Question Answering (CQA) has become a primary means for people to acqu
 # **Dataset.**
 
 The Quora Question Pair dataset contains more than 400 thousand unique question pairs. The Quora question pair dataset contains the following columns. 
+
+
 Variable Name | Description |
 --- | --- | 
 qid1 | Question 1 ID |
@@ -30,14 +30,14 @@ Question 1 and Question 2 will be the Independent variables and is_duplicate be 
 8.	Create the attention masks to distinguish real tokens from [PAD] tokens.
 9.	Create token type ids to indicate which token belongs to which question.
 
-![alt text](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/preprocessing.png)
+![alt text](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/preprocessing.png?raw=true)
 
 
 # **BERT Model**
 
 Bidirectional Encoder Representations from Transformers (BERT) was released and pre-trained by Google for natural language processing tasks in late 2018. It consists of 12 transformer encoding layers (or 24 for large BERT). BERT relies on a Transformer - its attention mechanism learns contextual relationships between words in a text. Since BERT’s goal is to generate a language representation model, it only needs the encoder part. BERT is a pre-trained model using plain text corpus. We fine-tuned bert-base-uncased model by adding just an additional output layer to classify duplicate questions.
 
-![BERT](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/BERT.png)
+![BERT](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/BERT.png?raw=true)
 
 # **Training**
 
@@ -55,7 +55,7 @@ Few variables that have been tuned:
 
 ## **Results :**
 
-![RESULT](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Results.png)
+![RESULT](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Results.png?raw=true)
 
 
 The optimal parameter for our model was : 
@@ -73,4 +73,4 @@ The optimal parameter for our model was :
 A user gives two questions to the model and the model cleans the questions, pre process over the data. The preprocessed data will be given to the model which predicts whether the questions are duplicate or not. 
 The following is a screenshot for the Demo
 
-![alt text](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Demo%20output.png)
+![alt text](https://github.com/ronakshankar/ronakshankar.github.io/blob/main/Demo%20output.png?raw=true)
